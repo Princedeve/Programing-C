@@ -7,6 +7,17 @@ int fact(int n){
     return fact(n-1)*n;
 }
 
+int fibonaci(int n){
+    if(n == 0){
+        return 0;
+    }
+    if(n == 1){
+        return 1;
+    }
+
+    return fibonaci(n-1) + fibonaci(n-2);
+}
+
 int main(){
     // int fact = 1;
     // int n ;
@@ -17,7 +28,10 @@ int main(){
     //     fact = fact * i;
     // }
     // printf("%d", fact);
-    int n = fact(5);
-    printf("%d", n);
+    // int n = fact(5);
+    // printf("%d", n);
+
+   
+    printf("%d", fib);
     return 0;
 }
