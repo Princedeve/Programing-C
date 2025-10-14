@@ -31,7 +31,7 @@ int main(){
     // int n = fact(5);
     // printf("%d", n);
 
-   
+   int fib = fibonaci(6);
     printf("%d", fib);
     return 0;
 }
