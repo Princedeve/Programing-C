@@ -18,6 +18,5 @@ int main(){
     swap(&x, &y);
     printf("The value of x is %d y is %d\n", x, y);
 
-
     return 0;
 }
