@@ -11,6 +11,7 @@ void swap(int *x, int *y){
     *x = *y;
     *y = temp;
 }
+
 int main(){
     int x = 1, y = 6;
     printf("The sum of 1 and 6 is %d\n", sum(&x, &y));
