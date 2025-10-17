@@ -14,12 +14,18 @@ void change_to_ten_times(int*);
         int* temp = n;
         *n = 5;
     }
-    int sum(int a, int b){
-        printf("The sum is %d\n", a+b);
+    int* sum(int a, int b){
+        int sum = a+b;
+        int * ptr = &sum;
+        printf("The sum is %d\n", sum);
+        return ptr;
     }
 
-    int average(int a, int b){
-        printf("The average is %d\n", (a+b)/2);
+    float* average(int a, int b){
+        float avg = (a+b)/2.0;
+        float* ptr = &avg;
+        printf("The average is %f\n", avg);
+        return ptr;
     }
 int main(){
     // 1 Write a program to print the address of a variable. Use this address to get the value of the variable.
@@ -42,8 +48,10 @@ int main(){
     ref(&b);
     printf("The value of b is %d\n", b);
     // 5 Write a program using a function which calculates the sum and average of two numbers. Use pointers and print the values of sum and average of two numbers. Use pointers and print the values of sum and average in main().
-    sum(3,4);
-    average(3,4);
+    int * ptr1 = sum(3,4);
+    float * ptr2 = average(3,4);
+    
+    printf("The address of sum is %u and average is %u\n", ptr1, ptr2);
     // 6 Write a program to print the value of a variable i by using "pointer to pointer" type of variable.
     // 7 Try problem 3 using call by value and verify that it does not change the value of the said variable.
 
