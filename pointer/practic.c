@@ -1,4 +1,6 @@
 #include <stdio.h>
+int  returning_5(int *);
+void change_to_ten_times(int*);
     int returning_5(int* ptr){
         printf("The value of ptr is %d\n", ptr);
         printf("The value at ptr is %d\n", *ptr);
