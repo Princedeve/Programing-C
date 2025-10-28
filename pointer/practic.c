@@ -60,7 +60,15 @@ int main(){
     printf("The address of v is %d\n", *v1);
     printf("The address of v is %d\n", **v2);
     // 7 Try problem 3 using call by value and verify that it does not change the value of the said variable.
-
-    
+    int k = 45;
+    int i = k;
+    printf("The value of x is %d\n", k);
+    change_to_ten_times(&k);
+    printf("The value of x is %d\n", k);
+    if(i == k){
+        printf("this is not change\n");
+    }else{
+        printf("This value is not equal\n");
+    }
     return 0;
 }
