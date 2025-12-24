@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include <stdlib.h>
 // int squre(int n){
 //     printf("%d Bytes\n", sizeof(int));
 //     printf("%d Bytes\n", sizeof(n));
@@ -7,8 +7,14 @@
 // }
 
 int add(int arr[], int n){
-    printf("Arrays Size %d Bytes\n", sizeof(arr[0])*n);
     int sum = 0, i;
+    // dynamic runtime space genrate hoga
+    printf("Arrays Size %d Bytes\n", sizeof(arr[0])*n);
+    // fixed space genrate hogi 
+    printf("%d Bytes\n", sizeof(int));
+    printf("%d Bytes\n", sizeof(n));
+    printf("%d Bytes\n", sizeof(i));
+    printf("%d Bytes\n", sizeof(sum));
     for(i = 0; i<n; i++){
         sum = sum + arr[i];
     }
